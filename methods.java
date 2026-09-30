@@ -14,11 +14,6 @@ public class methods {
             System.out.println("Your age is not enough to Login!");
         }
     }
-    static void greeting(){
-        System.out.println("Hello, How are you ?");
-        System.out.println("I'm fine and you");
-        System.out.println("It not fine\n");
-    }
     static void happyBirthday(String name, int age){
         System.out.println("Happy Birthday to you");
         System.out.printf("Happy Birthday dear %s\n", name);
