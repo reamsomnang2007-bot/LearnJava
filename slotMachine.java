@@ -1,8 +1,8 @@
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 public class slotMachine {
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
+        try(Scanner scanner = new Scanner(System.in)){
         // java slot machine
         int balance = 100;
         int bet;
@@ -55,6 +55,7 @@ public class slotMachine {
         System.out.println("Game Over! Your final balance is $" + balance);
 
         scanner.close();
+    }
 
     }
     static String[] spinRow(){
