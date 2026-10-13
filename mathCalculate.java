@@ -58,8 +58,15 @@ public class mathCalculate {
         scanner.nextLine();
         System.out.print("Do you want to calculate again ? (yes/no) : ");
         calculateAgain = scanner.nextLine().toLowerCase();
+        if(calculateAgain.equals("no")){
+            System.out.println("Thank you for using this program!");
+            break;
+        }
+        else{
+            System.out.println("Invaild choice. Please try again!");
+            continue;
+        }
         }while(calculateAgain.equals("yes"));
-        System.out.println("Thank you for using this program!");
     }
     }
 }
