@@ -1,15 +1,14 @@
 public class Main{
     public static void main(String[] args) {
-        Car car = new Car();
-        car.isRunning = true;
-        System.out.println(car.make);
-        System.out.println(car.model);
-        System.out.println(car.year);
-        car.start();
-        System.out.println(car.isRunning);
-        car.stop();
-        System.out.println(car.isRunning);
-        car.drive();
-        car.brake();
+        Student[] students = new Student[1];
+        for(int i = 0; i < students.length; i++){
+            students[i] = new Student();
+            students[i].addStudent();
+        }
+        System.out.println("----------[ Display All Student ]----------");
+        for(int i = 0; i < students.length; i++){
+            students[i].displayAllStudent();
+        }
+        System.out.println("-------------------------------------------");
     }
 }
