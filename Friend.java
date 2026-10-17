@@ -5,6 +5,9 @@ public class Friend {
         this.name = name;
         numOfFriends++;
     }
+    void friendName(){
+        System.out.println("Your friend name " + name);
+    }
     static void showFriends(){
         System.out.println("You have " + numOfFriends + " total friends.");
     }
