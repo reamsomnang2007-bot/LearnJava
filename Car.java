@@ -1,12 +1,18 @@
 public class Car {
+    String make;
     String model;
+    int year;
     String color;
 
-    Car(String model, String color){
+
+    Car(String make, String model, int year, String color){
+        this.make = make;
         this.model = model;
+        this.year = year;
         this.color = color;
     }
-    void drive(){
-        System.out.println("You drive the " + this.color + " " + this.model);
+    @Override
+    public String toString(){
+        return this.make + " " + this.model + " " + this.year + " " + this.color;
     }
 }
