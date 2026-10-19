@@ -1,4 +1,4 @@
-public class Car {
+public class Car extends Vehicle{
     String make;
     String model;
     int year;
@@ -14,5 +14,9 @@ public class Car {
     @Override
     public String toString(){
         return this.make + " " + this.model + " " + this.year + " " + this.color;
+    }
+    @Override
+    void go(){
+        System.out.println("The car is driving!");
     }
 }
