@@ -16,8 +16,5 @@ public class Polymorphism {
         for(Vehicle v : vehicles){
             v.go();
         }
-
-
-
     }
 }
