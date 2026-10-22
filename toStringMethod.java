@@ -5,7 +5,7 @@ public class toStringMethod {
         //              By default, it returns a hush code as a unique
         //              It can overridden to provide meaningful details.
 
-        Car car = new Car("Ford", "Mustang", 2026, "white");
+        Car car = new Car("fond", "raptor", 2026, "white", 100000);
         System.out.println(car);
 
     }

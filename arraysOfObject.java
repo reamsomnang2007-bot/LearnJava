@@ -1,12 +1,9 @@
 public class arraysOfObject {
     public static void main(String[] args) {
-        Car[] cars = {new Car("mustang", "white"),
-                    new Car("covette", "red"),
-                    new Car("bugati", "black"),
-                    new Car("BMW", "mansory color")
+        Car[] cars = {new Car("fond", "raptor", 2026, "white", 100000),
+        new Car("fond", "raptor", 2026, "white", 100000),
+        new Car("fond", "raptor", 2026, "white", 100000),
+        new Car("fond", "raptor", 2026, "white", 100000)
         };
-        for(Car car : cars){
-            car.drive();
-        }
     }
 }
