@@ -1,14 +1,25 @@
+import java.io.FileWriter;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 public class Main{
     public static void main(String[] args) {
-        Student[] students = new Student[1];
-        for(int i = 0; i < students.length; i++){
-            students[i] = new Student();
-            students[i].addStudent();
+        String filePath = "reviewWriteFile.txt";
+        String textContent = """
+                Today I'm going to review 
+                The lesson write and read file
+                in Java full course for free
+                """;
+        try(FileWriter writer = new FileWriter(filePath)){
+            System.out.println("Have been written file!");
+            writer.write(textContent);
         }
-        System.out.println("----------[ Display All Student ]----------");
-        for(int i = 0; i < students.length; i++){
-            students[i].displayAllStudent();
+        catch(FileNotFoundException e){
+            System.out.println("Could not locate file");
         }
-        System.out.println("-------------------------------------------");
+        catch(IOException e){
+            System.out.println("Could not written file");
+        }
+
+
     }
 }
