@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Student {
     String name;
@@ -7,15 +8,15 @@ public class Student {
     String course;
     String classroom;
     String contact;
-    Scanner scanner = new Scanner(System.in);
-    Student(){
-        this.name = "";
-        this.id = 0;
-        this.gender = ' ';
-        this.age = 0;
-        this.course = "";
-        this.classroom = "";
-        this.contact = "";
+    static Scanner scanner = new Scanner(System.in);
+    Student(String name, int id, char gender, int age, String course, String classroom, String contact){
+        this.name = name;
+        this.id = id;
+        this.gender = gender;
+        this.age = age;
+        this.course = course;
+        this.classroom = classroom;
+        this.contact = contact;
     }
     public void addStudent(){
         System.out.println("----------[ Add Student ]----------");
@@ -46,6 +47,7 @@ public class Student {
         System.out.println("Classroom : " + classroom);
         System.out.println("Contact : " + contact);
     }
+   
 
     
 }

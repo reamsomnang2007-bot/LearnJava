@@ -6,7 +6,7 @@ public class MethodOverriding {
         Dog dog = new Dog();
         Cat cat = new Cat();
         Rabbit rabbit = new Rabbit();
-        dog.walk();
+
         cat.walk();
         rabbit.walk();
     }

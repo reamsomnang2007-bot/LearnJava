@@ -1,4 +1,4 @@
-public class Dog extends Animals{
+public class Dog{
     void speak(){
         System.out.println("The Dog goes woof");
     }

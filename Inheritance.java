@@ -6,7 +6,7 @@ public class Inheritance {
         Dog dog = new Dog();
         Rabbit rabbit = new Rabbit();
         rabbit.walk();
-        System.out.println(dog.isLive);
+
 
     }
 }
